@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MPI Vue Project</title>
+        <link rel="stylesheet" href="styles.css">
+        <style></style>
+    </head>
+    <body>
+        <div id="app" class="weather-app">
+            <!-- Header Vue component -->
+            <mpi-header></mpi-header>
+            <!-- Button to search city weather -->
+            <input type="text" name="" value="" v-model="citytosearch" size="25" placeholder="Enter the city here...">
+            <button class="nappula" type="button" name="button" @click="getWeather()">Search</button>
+            <hr>
+            <!-- Weather-list Vue component -->
+            <weather-list></weather-list>    
+            <hr v-if="citylist.length > 0">
+             <!-- Weather-stats Vue component -->
+            <weather-stats></weather-stats>
+            <hr v-if="citylist.length > 0">
+             <!-- Footer Vue component -->
+            <mpi-footer></mpi-footer>
+        </div> 
+        |   <script src ="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+            <script src ="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>                  
+            <script src = Projekti-MPI.js></script>         
+    </body>
+</html>

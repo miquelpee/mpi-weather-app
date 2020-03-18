@@ -1,0 +1,60 @@
+/* Background color */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Centering the text for the whole app */
+.weather-app{ 
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+/* Formatting tables */
+table {
+    border-radius: 15px 50px 30px;
+    background:darkslategray;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+
+/* Formatting tables */
+td, th{
+      text-align: center;
+}
+
+/* Style for button */
+.nappula{
+    border-radius: 15px 50px 30px;
+    background-color: darkslategray;
+    color: white;
+    padding: 10px; 
+    cursor: pointer;
+    border-style: solid;
+    text-emphasis: bold;
+    font-weight: bold;
+}
+
+/* Keeping the button same all the time */
+.nappula:focus {
+  outline:0 !important;
+}
+
+/* Style for horizontal line */
+hr {
+    border-top: 1px dashed grey;
+}
+
+/* Fading styles for showing the tables */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 2s;
+}
+
+/* Fading styles for showing the tables */
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
